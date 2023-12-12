@@ -3,7 +3,9 @@ import "bootstrap";
 import "./style.css";
 
 window.onload = () => {
-  document.querySelector("#theExcuse").innerHTML = generateExcuse();
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#theExcuse").innerHTML = generateExcuse();
+  });
 };
 
 //function for the excuses
